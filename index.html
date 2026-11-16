@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bjørn Isak Fauske</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header><div class="nav-wrap">
+  <div class="brand">BJØRN ISAK <span>FAUSKE</span></div>
+  <nav aria-label="Hovedmeny">
+    <button class="active" data-page="hjem">Hjem</button>
+    <button data-page="om">Om meg</button>
+    <button data-page="tjenester">Hva jeg gjør</button>
+    <button data-page="prosjekter">Prosjekter</button>
+    <button data-page="kontakt">Kontakt</button>
+  </nav>
+</div></header>
+<main>
+<section id="hjem" class="page active">
+  <div class="hero"><div>
+    <div class="eyebrow">Velkommen</div>
+    <h1>Bjørn Isak<br>Fauske<span style="color:#858585">.</span></h1>
+    <p class="lead">En personlig nettside for å samle arbeidet, ideene og prosjektene mine på ett sted.</p>
+    <div class="actions"><button class="button" onclick="showPage('prosjekter')">Se prosjekter ↗</button><button class="button secondary" onclick="showPage('kontakt')">Ta kontakt</button></div>
+  </div><div class="hero-mark" aria-hidden="true">BF</div></div>
+</section>
+<section id="om" class="page">
+  <div class="eyebrow">Litt om meg</div><h2>Hei, jeg er Bjørn Isak.</h2>
+  <p class="lead">Her kan du skrive en kort presentasjon av deg selv, bakgrunnen din og hva du er interessert i.</p>
+  <div class="cards"><article class="card"><div class="num">01 / BAKGRUNN</div><h3>Hvem jeg er</h3><p>Legg inn litt om deg selv og historien din.</p></article><article class="card"><div class="num">02 / INTERESSER</div><h3>Det jeg liker</h3><p>Fortell om interessene og temaene du brenner for.</p></article><article class="card"><div class="num">03 / MÅL</div><h3>Veien videre</h3><p>Del hva du jobber mot og ønsker å få til.</p></article></div>
+</section>
+<section id="tjenester" class="page">
+  <div class="eyebrow">Kompetanse og arbeid</div><h2>Hva jeg holder på med.</h2>
+  <p class="lead">Bruk denne siden til å vise frem ferdigheter, fagområder eller tjenester.</p>
+  <div class="cards"><article class="card"><div class="num">01</div><h3>Kompetanse</h3><p>Beskriv hva du kan og hva du har erfaring med.</p></article><article class="card"><div class="num">02</div><h3>Arbeidsområder</h3><p>Legg til områdene du ønsker å fremheve.</p></article><article class="card"><div class="num">03</div><h3>Samarbeid</h3><p>Fortell hva slags samarbeid eller oppdrag som er aktuelt.</p></article></div>
+</section>
+<section id="prosjekter" class="page">
+  <div class="eyebrow">Arbeid og idéer</div><h2>Prosjekter<span style="color:#858585">.</span></h2>
+  <p class="lead">Last opp filer for å samle prosjektmaterialet ditt. Filene vises i listen under.</p>
+  <div class="panel">
+    <div class="upload" id="dropzone"><strong>Slipp filer her</strong><p>eller velg filer fra enheten din</p><label class="button" for="fileInput">＋ Velg filer</label><input id="fileInput" type="file" multiple></div>
+    <div id="fileList" class="file-list"><p style="color:#68736d">Ingen filer lagt til ennå.</p></div>
+    <p style="font-size:.85rem;color:#68736d;margin:18px 0 0">Merk: Dette er en lokal prototype. Filene blir ikke lastet opp til en server, og listen nullstilles når siden lastes på nytt.</p>
+  </div>
+</section>
+<section id="kontakt" class="page">
+  <div class="eyebrow">Kontakt</div><h2>Skal vi ta en prat?</h2>
+  <p class="lead">Legg inn kontaktinformasjonen din her, slik at folk enkelt kan komme i kontakt med deg.</p>
+  <div class="contact-grid"><div class="contact-box"><div class="eyebrow">E-post</div><h3>Din e-postadresse</h3><p style="color:#68736d">Bytt ut med e-postadressen din.</p></div><div class="contact-box"><div class="eyebrow">Sosiale medier</div><h3>Finn meg på nett</h3><p style="color:#68736d">Legg til lenker til profilene dine.</p></div></div>
+</section>
+</main>
+<footer>© <span id="year"></span> Bjørn Isak Fauske · Laget med omtanke</footer>
+<script src="script.js" defer></script>
+</body></html>
